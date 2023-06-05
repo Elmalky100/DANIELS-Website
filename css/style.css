@@ -1,0 +1,461 @@
+:root{
+    --maincolor: #343434;
+    --font-family:font-family: 'Poppins', sans-serif; 
+}
+#home{
+    background-image: url(../images/images01.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.overlay{
+    background-color: rgba(0,0, 0, .65);
+    width: 100%;
+    height: 100%;
+}
+/* #home .navbar{
+    background-color: rgba(0,0, 0, .65);
+} */
+.backgroung{
+    background-color: var(--maincolor);
+}
+.navbar{
+    transition: background-color 1s;
+}
+
+
+#home .navbar-nav{
+    font-family: var(--font-family);
+}
+#home .navbar-brand{
+    font-family: var(--font-family);
+    color: #fff;
+}
+
+#home .nav-link {
+    color: #fff;
+}
+#home .nav-link.active{
+    position: relative;
+}
+#home .nav-link.active::after{
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 8px;
+    left: 9px;
+}
+
+#home .home-content {
+    font-family: var(--font-family);
+}
+ #home .home-content h5{
+    font-size: 3rem;
+}
+#home .home-content h1{
+    font-size: 3rem;
+    
+    
+} 
+
+#home .home-content h1::after{
+    content: "";
+    animation: moving 1s infinite alternate;
+    font-weight: 400;
+    
+}
+@keyframes moving {
+    0%{
+        content: "|";
+    }
+
+     9%{
+        content: "D|";
+    }
+    18%{
+        content: "De|";
+    }
+    27%{
+        content: "Dev|";
+    }
+    36%{
+        content: "Deve|";
+    }
+    45%{
+        content: "Devel|";
+    }
+    54%{
+        content: "Develo|";
+    }
+    63%{
+        content: "Develop|";
+    }
+    72%{
+        content: "Develope|";
+    }
+    81%{
+        content: "Developer|";
+    }
+    90%{
+        content: "Developer|";
+    }
+    100%{
+        content: "Developer|";
+    } 
+   
+}
+#home .home-content .home-icons a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* #home .home-content .home-icons {
+     width: 40px;
+    height: 40px;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;   
+     
+} */
+#home .home-content .home-icons i{
+    background-color: rgba(0,0, 0, .3);
+    width: 40px;
+    height: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0.1rem;
+}
+
+
+#about .about-img{
+position: relative;
+}
+#about .about-img::after{
+content: "";
+width: 80%;
+height: 80%;
+position: absolute;
+left: -30px;
+bottom: -30px;
+background-image: url(../images/dots.png);
+background-repeat: repeat;
+ z-index: -1; 
+}
+#about .about-content h3{
+    color: var(--maincolor);
+}
+#about .p-span{
+    color:  #999;
+}
+#about p{
+    color:#748182;
+    line-height: 1.6;
+}
+#about .progress-shadow{
+    box-shadow: 0px 2px 7px  rgba(0,0, 0 ,.2) inset;
+}
+.progress-bar{
+    background-color: var(--maincolor); 
+    border-radius: 5px;
+    text-align: left; 
+}
+.web-move{
+    animation: move 5s;
+}
+@keyframes move {
+    0%{width: 40%;}
+    100%{width: 95%;}
+}
+.branding-move{
+    animation: move1 5s;
+}
+@keyframes move1 {
+    0%{width: 40%;}
+    100%{width: 80%;}
+}
+.development-move{
+    animation: move2 5s;
+}
+@keyframes move2 {
+    0%{width: 40%;}
+    100%{width: 90%;}
+}
+ .progress1{
+    position: relative;
+}
+.progress1::after{
+    content: "95%";
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #fff;
+} 
+.progress2{
+    position: relative;
+}
+.progress2::after{
+    content: "80%";
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #fff;
+
+} 
+.progress3{
+    position: relative;
+}
+.progress3::after{
+    content: "90%";
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #fff;
+
+} 
+
+  .hbox{
+    height: 25px;
+}  
+#about .btn{
+    background-color: var(--maincolor);
+    transition: all 0.5s;
+}
+#about .btn:hover{
+    background-color: transparent;
+    color: #000 !important;
+}
+#about .btn2{
+    background-color: transparent;
+    color: var(--maincolor);
+    transition: all 0.5s;
+}
+#about .btn2:hover{
+    background-color: var(--maincolor);
+     color: #fff !important; 
+}
+ .services-head h3{
+    color: var(--maincolor);
+     font-size: 3rem; 
+     position: relative;
+      z-index: 1;
+}
+ .services-head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+     background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1; 
+}
+#services .services-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+#services .services-content{
+    color: var(--maincolor);
+}
+#services .services-content p{
+    color: #748182;
+    line-height: 1.6;
+}
+.services-icon{
+    transition: all 0.2s;
+}
+#services .services-content:hover .services-icon{
+      background-color: #000;
+      color: #fff;
+}
+
+  .portofolio-item{
+     overflow: hidden;  
+}  
+.portofolio-item .layer{
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   bottom: 5px;
+   right: 5px;
+   background-color: rgba(255, 255, 255, 0.95);
+   opacity: 0;  
+   transition: all 1s;  
+}
+ .portofolio-item:hover .layer{
+    opacity: 1; 
+} 
+
+#works .portofolio-icons .icon1 , #works .portofolio-icons .icon2{
+width: 35px;
+height: 35px;
+background-color: #000;
+border-radius: 50%;
+}
+
+.icon1:hover , .icon2:hover{
+    background-color:#fff !important;
+    border: 1px solid #000;
+}
+.icon1:hover a , .icon2:hover a{
+    color: #000!important;
+}
+ .nav-tabs .nav-link.active {
+border: none;
+}
+.nav-tabs{
+    border-bottom: none!important;
+}
+.clients-item p{
+    color: #748182;
+}
+.clients-item span{
+    color: #888;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D6D6D6;
+}
+.counter-icon , .counter-counter p{
+    color: var(--maincolor);
+}
+.counter-counter span {
+    color: #748182;
+}
+.counter1::after{
+    content: "850";
+    animation: counter1 0.5s normal;
+}
+@keyframes counter1 {
+    0%{content:"100"}
+    10%{content:"200"}
+    20%{content:"300"}
+    30%{content:"400"}
+    40%{content:"500"}
+    50%{content:"600"}
+    60%{content:"700"}
+    70%{content:"750"}
+    85%{content:"800"}
+    100%{content:"150"}
+}
+.counter2::after{
+    content: "230";
+    animation: counter2 0.5s normal;
+}
+@keyframes counter2 {
+    0%{content:"23"}
+    10%{content:"46"}
+    20%{content:"69"}
+    30%{content:"92"}
+    40%{content:"115"}
+    50%{content:"138"}
+    60%{content:"161"}
+    70%{content:"184"}
+    85%{content:"207"}
+    100%{content:"230"}
+}
+.counter3::after{
+    content: "9450";
+    animation: counter3 0.5s normal;
+}
+@keyframes counter3 {
+    0%{content:"945"}
+    10%{content:"1890"}
+    20%{content:"2835"}
+    30%{content:"3780"}
+    40%{content:"4725"}
+    50%{content:"5670"}
+    60%{content:"6615"}
+    70%{content:"7560"}
+    85%{content:"8505"}
+    100%{content:"9450"}
+}
+.counter4::after{
+    content: "780";
+    animation: counter4 0.5s normal;
+}
+@keyframes counter4 {
+    0%{content:"78"}
+    10%{content:"156"}
+    20%{content:"234"}
+    30%{content:"312"}
+    40%{content:"390"}
+    50%{content:"468"}
+    60%{content:"546"}
+    70%{content:"624"}
+    85%{content:"702"}
+    100%{content:"780"}
+}
+.card-body h6{
+    color: #888;
+}
+.card-body h4 a{
+    color: #333;
+}
+.card-body .readmore{
+    color: #748182;
+}
+.card:hover img {
+    transform: scale(1.1);
+}
+.card-img img{
+    transition: all 0.5s;
+}
+.contact-item i{
+    color: var(--maincolor);
+}
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(28, 28, 28, 0.1);
+}
+.contact-item:hover .contact-icon{
+    background-color: var(--maincolor);
+
+     }
+     .contact-item:hover i{
+        color: #fff;
+     }
+     .contact-icon ,i {
+        transition: all 0.5s;
+     }
+     .contact-item h6{
+        color: var(--maincolor);
+     }
+     .contact-item p{
+        color: #748182;
+     }
+     input[type='text'],  input[type='email'], textarea[id="exampleFormControlTextarea1"] {
+        border: 0;
+        background: #f4f4f4;
+    }
+
+    /* .carousel-indicators [data-bs-target]:focus
+    {
+        border:none;
+    } */
+     .btn-button {
+        background-color: var(--maincolor);
+        color: #fff;
+        transition: all .5s;
+     }
+
+     .btn-button:hover{
+        background-color: transparent;
+        color: var(--maincolor);
+     }
+     .footer-footer{
+        background-color: var(--maincolor);
+     }
+     .footer-footer p{
+        color: #748182;
+     } 
+     
+
